@@ -1,0 +1,49 @@
+.students-table-container {
+  width: 100%;
+
+  .date {
+    height: 45px;
+    width: 200px;
+    padding: 0px 20px;
+    border-radius: 5px;
+    font-size: 16px;
+    border: 1px solid gray;
+    margin-bottom: 20px;
+    margin-left: 20px;
+    cursor: pointer;
+    &:active {
+      outline: none;
+    }
+    &:focus {
+      outline: none;
+    }
+  }
+  .actions-container {
+    button {
+      color: #4d75d8;
+      font-size: 16px;
+      font-style: normal;
+      font-weight: 500;
+      line-height: 30px;
+      background-color: rgba(240, 248, 255, 0);
+      border: none;
+      cursor: pointer;
+    }
+    .record-absence {
+      color: red;
+    }
+    .remove-absence {
+      color: green;
+    }
+  }
+}
+.delete-student {
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 30px;
+  background-color: rgba(240, 248, 255, 0);
+  border: none;
+  cursor: pointer;
+  color: red;
+}

@@ -1,0 +1,21 @@
+.details-container {
+  display: grid;
+  grid-template-columns: 50% 50%;
+  padding: 30px;
+  justify-items: end;
+  grid-row-gap: 20px;
+}
+.dates-container {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  padding: 30px;
+  gap: 20px;
+}
+.days {
+  color: #828699;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 30px;
+}

@@ -1,0 +1,256 @@
+
+.text-field {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+  position: relative;
+
+  .container-input-field {
+    position: relative;
+
+    &.container-secret {
+      border: 1px solid #babdcc;
+      z-index: 1000;
+      padding: 2px;
+      border-radius: 5px;
+
+      .input-field {
+        &.small {
+          height: 38px;
+        }
+
+        &.medium {
+          height: 43px;
+        }
+
+        &.large {
+          height: 48px;
+        }
+      }
+
+      &:hover {
+        border-color: #142452;
+      }
+
+      &:focus-visible {
+        border-color: #3a6cd1;
+        outline: none;
+      }
+    }
+
+    &:active {
+      border-color: #3a6cd1;
+    }
+  }
+
+  .label {
+    color: #142452;
+    font-size: 14px;
+    font-weight: 400;
+  }
+
+  .input-field {
+    font-family: 'Cairo';
+    width: 100%;
+    border: 1px solid #babdcc;
+    border-radius: 5px;
+    font-size: 14px;
+    font-weight: 400;
+    color: #142452;
+    padding: 0 20px 0 20px;
+    width: 100%;
+    height: 100%;
+    transition: all 0.2s ease-out;
+    grid-column: 1 / -1;
+    grid-row: 1 / 2;
+    appearance: textfield;
+
+    &::-webkit-outer-spin-button,
+    &::-webkit-inner-spin-button {
+      -webkit-appearance: none;
+      margin: 0;
+    }
+
+    &.small {
+      height: 40px;
+    }
+
+    &.medium {
+      height: 45px;
+    }
+
+    &.large {
+      height: 50px;
+    }
+
+    &::placeholder {
+      color: #babdcc;
+      font-size: 14px;
+      font-weight: 400;
+    }
+
+    &:hover {
+      border-color: #142452;
+    }
+
+    &:focus-visible {
+      border-color: #3a6cd1;
+      outline: none;
+    }
+
+    &.clearable {
+      &.secret {
+        padding-right: 80px;
+        border: none;
+        &::before {
+          content: '';
+          border: 1px solid #000;
+        }
+      }
+    }
+
+    &.clearable {
+      &.password {
+        padding-right: 90px;
+      }
+    }
+  }
+
+  .icons-container {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    position: absolute;
+    right: 0;
+    margin-right: 20px;
+    top: 0;
+    bottom: 0;
+    gap: 10px;
+
+    .secret-icon {
+      cursor: pointer;
+      margin-left: 10px;
+      stroke-width: 1.5;
+      stroke: #000;
+
+      &.disabled {
+        cursor: auto;
+        stroke: #9a9eb2;
+      }
+    }
+
+    .password-icon {
+      cursor: pointer;
+      margin-left: 10px;
+      path {
+        fill: #142452 !important;
+      }
+    }
+
+    .password-icon-disabled {
+      path {
+        fill: #9a9eb2 !important;
+      }
+    }
+
+    .prop-icon {
+      display: flex;
+      align-items: center;
+
+      svg {
+        path {
+          fill: #babdcc;
+        }
+      }
+
+      &.active-content {
+        path {
+          fill: #142452;
+        }
+      }
+    }
+  }
+
+  .clear-icon {
+    cursor: pointer;
+
+    path {
+      fill: #9a9eb2 !important;
+    }
+  }
+
+  &.errorMessage {
+    .input-field {
+      border: 1px solid #ce2828;
+
+      &:hover,
+      &:focus-visible {
+        border-color: #ce2828;
+      }
+    }
+
+    .error-msg {
+      color: #ce2828;
+      font-size: 12px;
+      line-height: 22.49px;
+    }
+  }
+
+  &.success {
+    .input-field {
+      border: 1px solid #3aaa35;
+
+      &:hover,
+      &:focus-visible {
+        border-color: #3aaa35;
+      }
+    }
+  }
+
+  &.disabled {
+    .input-field {
+      border-color: transparent;
+      background-color: #f1f2f6;
+
+      &:hover {
+        border-color: transparent;
+      }
+    }
+  }
+
+  .star-require {
+    color: #ce2828;
+  }
+
+  .url-section {
+    position: absolute;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    bottom: 0;
+    height: 50px;
+    width: 50px;
+    border-right: 1px solid #babdcc;
+    color: #babdcc;
+  }
+  .container-label {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+  }
+  .container-url {
+    .input-field {
+      padding-left: 65px;
+    }
+  }
+  .container-label {
+    .optinal {
+      color: #babdcc;
+      font-weight: 400;
+      font-size: 12px;
+      line-height: 17px;
+    }
+  }
+}

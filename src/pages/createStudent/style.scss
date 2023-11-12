@@ -1,0 +1,20 @@
+.add-student-form {
+  width: 70%;
+  padding: 10px 30px;
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+
+  .add-student-button {
+    display: flex;
+    width: 350.163px;
+    padding: 15px 36px;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    border-radius: 5px;
+    background: #846338;
+    border: none;
+    color: #fff;
+  }
+}

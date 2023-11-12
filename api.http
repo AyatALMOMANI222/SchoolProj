@@ -1,0 +1,46 @@
+### GET Student Data
+GET http://localhost:3001/student HTTP/1.1
+Content-Type: application/json
+
+### GET Student Data by ID
+GET http://localhost:3001/student/${id} HTTP/1.1
+Content-Type: application/json
+
+
+### POST Student Data
+POST http://localhost:3001/student HTTP/1.1
+Content-Type: application/json
+{
+    "id":"id"
+    "name": "name",
+    "class": "class",
+    "section": "section",
+    "age": "age",
+    "nationality": "nationality",
+    "phoneNum": "phoneNum",
+    "absencesNum": "absencesNum",
+    "absencesDates":[]
+}
+
+###
+
+### DELETE Student by ID
+DELETE http://localhost:3001/student/${id} HTTP/1.1
+Content-Type: application/json
+
+###
+
+### Update Student Data
+PUT http://localhost:3001/student/${id} HTTP/1.1
+Content-Type: application/json
+{
+   "id":"id"
+    "name": "name",
+    "class": "class",
+    "section": "section",
+    "age": "age",
+    "nationality": "nationality",
+    "phoneNum": "phoneNum",
+    "absencesNum": "absencesNum",
+    "absencesDates":[]
+}

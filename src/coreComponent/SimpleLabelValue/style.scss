@@ -1,0 +1,28 @@
+.drawer-item-container {
+  display: flex;
+  flex-direction: row-reverse;
+  gap: 20px;
+
+  .title {
+    color: #828699;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 17px;
+    margin-bottom: 3px;
+  }
+
+  .text {
+    color: #142452;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 20px;
+  }
+
+  .green {
+    color: #3aaa35;
+  }
+
+  .red {
+    color: #da3f3f;
+  }
+}
